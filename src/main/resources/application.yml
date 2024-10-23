@@ -1,0 +1,10 @@
+server:
+  servlet:
+    context-path: /treinamento-devops
+
+spring:
+  datasource:
+      username: admin
+      password: admin
+      url: 'jdbc:h2:mem:treinamento'
+      driverClassName: org.h2.Driver
