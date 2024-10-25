@@ -4,7 +4,13 @@ server:
 
 spring:
   datasource:
-      username: admin
-      password: admin
-      url: 'jdbc:h2:mem:treinamento'
-      driverClassName: org.h2.Driver
+    url: jdbc:postgresql://postgres-db:5432/meubanco
+    username: meuusuario
+    password: minhasenha
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
