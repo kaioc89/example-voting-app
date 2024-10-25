@@ -1,7 +1,6 @@
 server:
   servlet:
     context-path: /treinamento-devops
-
 spring:
   datasource:
     url: jdbc:postgresql://postgres-db:5432/meubanco
